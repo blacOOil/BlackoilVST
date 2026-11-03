@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="lDnXNE" name="NewProject" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="MKneIO" name="NewProject">
+    <GROUP id="{F2991A5A-58E6-2F41-147F-D6F3D795406C}" name="Source">
+      <FILE id="s2nYwq" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="wauhM4" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="ehZZ0w" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="NewProject"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NewProject"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="/usr/local/include/JUCE-8.0.15/modules"/>
+        <MODULEPATH id="juce_events" path="/usr/local/include/JUCE-8.0.15/modules"/>
+        <MODULEPATH id="juce_graphics" path="/usr/local/include/JUCE-8.0.15/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/usr/local/include/JUCE-8.0.15/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="/usr/local/include/JUCE-8.0.15/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="/usr/local/include/JUCE-8.0.15/modules"/>
+        <MODULEPATH id="juce_opengl" path="/usr/local/include/JUCE-8.0.15/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

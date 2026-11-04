@@ -25,8 +25,23 @@ public:
 
 private:
     //==============================================================================
-    // Your private member variables go here...
+    void createShaders();
 
+    struct Vertex
+    {
+        float position[3];
+        float colour[4];
+    };
+
+    std::unique_ptr<juce::OpenGLShaderProgram> shader;
+    std::unique_ptr<juce::OpenGLShaderProgram::Attribute> position;
+    std::unique_ptr<juce::OpenGLShaderProgram::Attribute> sourceColour;
+    std::unique_ptr<juce::OpenGLShaderProgram::Uniform> projectionMatrix;
+    std::unique_ptr<juce::OpenGLShaderProgram::Uniform> viewMatrix;
+
+    GLuint vertexBuffer = 0, indexBuffer = 0;
+    float rotation = 0.0f;
+    juce::String newVertexShader, newFragmentShader;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

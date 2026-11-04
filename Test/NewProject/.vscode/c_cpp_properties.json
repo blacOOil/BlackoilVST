@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/Source",
+                "${workspaceFolder}/JuceLibraryCode",
+                "/usr/local/include/JUCE-8.0.15/modules",
+                "/usr/include/gtk-3.0",
+                "/usr/include/glib-2.0",
+                "/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+                "/usr/include/pango-1.0",
+                "/usr/include/cairo",
+                "/usr/include/gdk-pixbuf-2.0",
+                "/usr/include/atk-1.0",
+                "/usr/include/freetype2",
+                "/usr/include/harfbuzz"
+            ],
+            "defines": [
+                "LINUX=1",
+                "DEBUG=1",
+                "_DEBUG=1",
+                "JUCE_MODULE_AVAILABLE_juce_core=1",
+                "JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+                "JUCE_MODULE_AVAILABLE_juce_events=1",
+                "JUCE_MODULE_AVAILABLE_juce_graphics=1",
+                "JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+                "JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+                "JUCE_MODULE_AVAILABLE_juce_opengl=1",
+                "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+                "JUCE_STANDALONE_APPLICATION=1"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

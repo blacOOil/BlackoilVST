@@ -1,6 +1,9 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "Model3D.h"
+#include "Renderer.h"
+#include "CameraController.h"
 
 //==============================================================================
 /*
@@ -23,25 +26,16 @@ public:
     void paint (juce::Graphics& g) override;
     void resized() override;
 
+    //==============================================================================
+    void mouseDown (const juce::MouseEvent& e) override;
+    void mouseDrag (const juce::MouseEvent& e) override;
+    void mouseWheelMove (const juce::MouseEvent& e, const juce::MouseWheelDetails& wheel) override;
+
 private:
     //==============================================================================
-    void createShaders();
-
-    struct Vertex
-    {
-        float position[3];
-        float colour[4];
-    };
-
-    std::unique_ptr<juce::OpenGLShaderProgram> shader;
-    std::unique_ptr<juce::OpenGLShaderProgram::Attribute> position;
-    std::unique_ptr<juce::OpenGLShaderProgram::Attribute> sourceColour;
-    std::unique_ptr<juce::OpenGLShaderProgram::Uniform> projectionMatrix;
-    std::unique_ptr<juce::OpenGLShaderProgram::Uniform> viewMatrix;
-
-    GLuint vertexBuffer = 0, indexBuffer = 0;
-    float rotation = 0.0f;
-    juce::String newVertexShader, newFragmentShader;
+    Renderer renderer;
+    Model3D model;
+    CameraController camera;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

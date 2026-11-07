@@ -8,6 +8,16 @@
       <FILE id="wauhM4" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="ehZZ0w" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
+      <FILE id="m3DhAx" name="Model3D.h" compile="0" resource="0" file="Source/Model3D.h"/>
+      <FILE id="m3DcPp" name="Model3D.cpp" compile="1" resource="0" file="Source/Model3D.cpp"/>
+      <FILE id="rNdrHx" name="Renderer.h" compile="0" resource="0" file="Source/Renderer.h"/>
+      <FILE id="rNdrCp" name="Renderer.cpp" compile="1" resource="0" file="Source/Renderer.cpp"/>
+      <FILE id="camCtlH" name="CameraController.h" compile="0" resource="0" file="Source/CameraController.h"/>
+      <FILE id="camCtlC" name="CameraController.cpp" compile="1" resource="0" file="Source/CameraController.cpp"/>
+      <GROUP id="{A1B2C3D4-1234-5678-9ABC-DEF012345678}" name="Shaders">
+        <FILE id="shVert1" name="Basic.vert" compile="0" resource="1" file="Source/Shaders/Basic.vert"/>
+        <FILE id="shFrag1" name="Basic.frag" compile="0" resource="1" file="Source/Shaders/Basic.frag"/>
+      </GROUP>
     </GROUP>
   </MAINGROUP>
   <MODULES>
